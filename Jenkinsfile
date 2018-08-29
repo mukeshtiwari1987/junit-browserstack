@@ -1,7 +1,7 @@
 node {
   echo 'Starting Junit Sample'
-  git clone https://github.com/mukeshtiwari1987/junit-browserstack
-  browserstack(credentialsId: '2fd5e8fe-90d1-4c78-ba70-9915e5051832') {
+  git "https://github.com/mukeshtiwari1987/junit-browserstack"
+  browserstack(credentialsId: 'f476a413-e022-43b6-96a4-3b92ed3b556a') {
        sh 'echo "Printing BrowserStack Credentials"'
        sh 'echo "username is  : "+ $BROWSERSTACK_USERNAME'
        sh 'echo "accesskey is  : "+ $BROWSERSTACK_ACCESS_KEY'
